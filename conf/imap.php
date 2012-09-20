@@ -10,6 +10,7 @@
 */
 
 # this method connects to the standard IMAP service on an Exchange server
+# imap.hamlesh.com is just an example of a server address - not my actual mailserver :p
 $imap_server = "{imap.hamlesh.com:143/novalidate-cert}";
 
 # your IMAP username (for an Exchange server you need to use the format DOMAIN\username)
