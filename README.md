@@ -28,8 +28,8 @@ Requirements
 Getting Started
 ===============
 - Create a database on your mysql server
-- Upload/Import sql/graphbox.sql into the database, this will create
-  a single table (called inbox)
+- Extract/Import sql from graphbox-sql.zip into the database, this 
+  will create a single table (called inbox)
 - Update conf/db.php with your mysql details
 - Update conf/imap.php with your IMAP info
 - Setup an hourly cron job to call "php path/on/your/server/cron.php"
