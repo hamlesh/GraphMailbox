@@ -1,10 +1,11 @@
 <!-- Created using code from: https://github.com/hamlesh/GraphMailbox //-->
 <?
 	$iam = "30days"; //set page name - needs to be unique for each
+	$month = date('m');
 	include('conf/db.php');
 		// get some data
-		$sql = "SELECT * FROM inbox
-		WHERE LogMonth = '09'
+		$sql = "SELECT * FROM zovo
+		WHERE LogMonth = '$month'
 		GROUP BY LogDate
 		ORDER BY logdate desc
 		LIMIT 30";
