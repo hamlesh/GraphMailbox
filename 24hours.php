@@ -47,4 +47,4 @@ google.setOnLoadCallback(drawChart);
 	chart.draw(data, options);
 	}
 </script>
-<div id="chart_<?=$iam?>" style="width: 100%; height:50%;"></div>
+<div id="chart_<?=$iam?>" style="width: 100%; height:100%;"></div>
