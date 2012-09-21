@@ -5,7 +5,7 @@ Tracks and graphs the number of emails in your mailbox / inbox.
 
 The output will look something like - http://hamlesh.com/graphbox
 
-GraphMailbox is something that I�ve hacked together, I just needed
+GraphMailbox is something that I've hacked together, I just needed
 a simple way to get some metrics from my primary inbox.  I tend to
 use my inbox as a "things to-do/look at" list.  Always chasing
 inbox zero, the on-going graphing is just a way for me track my
