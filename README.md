@@ -64,5 +64,4 @@ See hamlesh.com for all my contact info.
 
 For help/pointers, ask me on twitter (@hamlesh).
 
-The following blog post explains how and why this came about;
-http://www.hamleshmotah.com/index.php/2012/09/21/track-and-graph-your-inbox/
+This post explains the how and why: http://zxv.me/graphmailbox
