@@ -38,7 +38,7 @@ google.setOnLoadCallback(drawChart);
 	var options = {
 						title:'Last 30 days (<?=$lastitemcount?>)',
 						hAxis: {title: 'Year-Month-Date'},
-						vAxis: {title: 'Emails'},
+						vAxis: {title: 'Emails', viewWindow:{min:0}},
 						legend: {position: 'none'}
 								};
 
