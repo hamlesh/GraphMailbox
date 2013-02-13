@@ -60,8 +60,8 @@ behind it.  I honestly want to know!
 
 Contact
 =======
-See hamlesh.com for all my contact info.
+See http://hamlesh.com for all my contact info.
 
-For help/pointers, ask me on twitter (@hamlesh).
+For help/pointers, ask me on twitter http://twitter.com/hamlesh
 
 This post explains the how and why: http://zxv.me/graphmailbox
