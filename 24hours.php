@@ -25,7 +25,7 @@ google.setOnLoadCallback(drawChart);
 			<?
 			$graphdata = "";
 			do {
-			$graphdata = $graphdata."['".$row['LogDate']." / ".$row['LogHour']."', ".$row['LogCount']."],";
+			$graphdata = $graphdata."['".$row['LogHour'].":00 ', ".$row['LogCount']."],";
 			} while ( $row = mysql_fetch_array($result) );
 			echo substr_replace($graphdata,"",-1);
 			?>
@@ -34,15 +34,15 @@ google.setOnLoadCallback(drawChart);
 	// Set some chart options
 	var options = {
 						title:'Last 24 hours (<?=$lastitemcount?>)',
-						hAxis: {title: 'Date / Hour'},
-						vAxis: {title: 'Emails'},
+						hAxis: {title: 'Last 24 hours up to <?=date(H).":00 ".date(d)."/".date(F)?>'},
+						vAxis: {title: 'Number of Emails'},
 						legend: {position: 'none'}
 								};
 
 	//uncomment based on the type of chart you want
-	//var chart = new google.visualization.ColumnChart(document.getElementById('chart_<?=$iam?>')); // bar chart
-	//var chart = new google.visualization.LineChart(document.getElementById('chart_<?=$iam?>')); // line chart
-	var chart = new google.visualization.AreaChart(document.getElementById('chart_<?=$iam?>')); // area chart
+	//var chart = new google.visualization.ColumnChart(document.getElementById('chart_<?=$iam?>')); // bar graph
+	//var chart = new google.visualization.LineChart(document.getElementById('chart_<?=$iam?>')); // line graph
+	var chart = new google.visualization.AreaChart(document.getElementById('chart_<?=$iam?>')); // area graph
 
 	chart.draw(data, options);
 	}
